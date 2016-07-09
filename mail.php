@@ -1,5 +1,5 @@
 <?php
-/incluimos la clase PHPMailer
+//incluimos la clase PHPMailer
 require_once('lib/PHPMailer/class.phpmailer.php');
 
 //instancio un objeto de la clase PHPMailer
