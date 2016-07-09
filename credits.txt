@@ -1,4 +1,3 @@
-
 CREDITS
 
 Responsive Template by http://www.templatemo.com
@@ -8,8 +7,6 @@ home background image - http://pixabay.com/en/startup-start-up-people-593343/
 
 
 home image - laptop mockup - http://pixabay.com/en/apple-imac-ipad-workplace-606761/
-
-
 
 contact image - http://pixabay.com/en/ipad-map-tablet-internet-screen-632394/
 
