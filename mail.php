@@ -38,7 +38,7 @@ $cuerpomsg ='
 	</html>
 ';
 
-/Añado un asunto al mensaje
+//Añado un asunto al mensaje
 $mail­>Subject = "[RUMI][ACADEMICO] Mensaje desde sitio web";
 $mail­>MsgHTML($cuerpomsg);
 
