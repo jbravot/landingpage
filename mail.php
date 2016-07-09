@@ -1,37 +1,42 @@
 <?php
-	//Recuperar los datos que serviran para enviar el correo
-     $seEnvio;		//Para determinar si se envio o no el correo
-     $destinatario = 'jjbravo88@gmail.com';		//A quien se envia
-     $elmensaje = str_replace("\n.", "\n..", $_POST['text']);     //por si el mensaje empieza con un punto ponerle 2
-     $elmensaje = wordwrap($elmensaje, 70);                       //dividir el mensaje en trozos de 70 cols
-     $cuerpomsg ='
-<html>
-<head>
-  <title>Tienes un mensaje!!</title>
-</head>
-<body>
-<p>jonathan Bravo, '.$_POST['name'].' - '.$_POST['email'].' te ha enviado un mensaje desde el sitio web http://www.rumiec.com</p>
-  <table>
-    <tr>
-      <td><b>Tu mensaje es:</b><br></td>
-    </tr>
-    <tr>
-      <td>'.$elmensaje.'</td>
-    </tr>
-  </table>
-</body>
-</html>
- ';
-//Establecer cabeceras para la funcion mail()
-	//version MIME
-	$cabeceras = "MIME-Version: 1.0\r\n";
-	//Tipo de info
-	$cabeceras .= "Content-type: text/html; charset=iso-8859-1\r\n";
-	//direccion del remitente
-	$cabeceras .= "From: ".$_POST['name']." <".$_POST['email'].">";
-	if(mail($destinatario,"Mensaje desde sitio web",$cuerpomsg,$cabeceras)){
-		$seEnvio = true;
-	}else{
- 		$seEnvio = false;
- 	}
+/incluimos la clase PHPMailer
+require_once('lib/PHPMailer/class.phpmailer.php');
+
+//instancio un objeto de la clase PHPMailer
+$mail = new PHPMailer(); // defaults to using php "mail()"
+
+//defino el email y nombre del remitente del mensaje
+$mail­>SetFrom('jjbravo88@gmail.com', 'RUMI');
+$mail­>AddAddress('jjbravo88@gmail.com', "Jonathan Bravo");
+
+$elmensaje = str_replace("\n.", "\n..", $_POST['text']);     //por si el mensaje empieza con un punto ponerle 2
+$elmensaje = wordwrap($elmensaje, 70);                       //dividir el mensaje en trozos de 70 cols
+$cuerpomsg ='
+	<html>
+	<head>
+	  <title>Tienes un mensaje!!</title>
+	</head>
+	<body>
+	<p>jonathan Bravo, '.$_POST['name'].' - '.$_POST['email'].' te ha enviado un mensaje desde el sitio web http://www.rumiec.com</p>
+	  <table>
+		<tr>
+		  <td><b>Tu mensaje es:</b><br></td>
+		</tr>
+		<tr>
+		  <td>'.$elmensaje.'</td>
+		</tr>
+	  </table>
+	</body>
+	</html>
+';
+
+/Añado un asunto al mensaje
+$mail­>Subject = "[RUMI][ACADEMICO] Mensaje desde sitio web";
+$mail­>MsgHTML($cuerpomsg);
+
+if(!$mail­>Send()) {
+	echo "0";
+} else {
+	echo "1";
+}
 ?>
