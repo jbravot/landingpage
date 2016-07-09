@@ -29,9 +29,10 @@
 	$cabeceras .= "Content-type: text/html; charset=iso-8859-1\r\n";
 	//direccion del remitente
 	$cabeceras .= "From: ".$_POST['name']." <".$_POST['email'].">";
-	if(mail($destinatario,"Mensaje desde sitio web",$cuerpomsg,$cabeceras)){
+	if(mail($destinatario,"[RUMI][ACADEMICO] Cotizacion desde sitio web",$cuerpomsg,$cabeceras)){
 		$seEnvio = true;
 	}else{
  		$seEnvio = false;
  	}
+echo $seEnvio;
 ?>
