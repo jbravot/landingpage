@@ -5,6 +5,14 @@ require_once('lib/PHPMailer/class.phpmailer.php');
 //instancio un objeto de la clase PHPMailer
 $mail = new PHPMailer(); // defaults to using php "mail()"
 
+$mail->IsSMTP(); // telling the class to use SMTP
+$mail->SMTPAuth   = true;                  // enable SMTP authentication
+$mail->SMTPSecure = "tls";                 // sets the prefix to the servier
+$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+$mail->Port       = 587;                   // set the SMTP port for the GMAIL server
+$mail->Username   = "jjbravo88@gmail.com";  // GMAIL username
+$mail->Password   = "tarpuyJON963";            // GMAIL password
+
 //defino el email y nombre del remitente del mensaje
 $mail­>SetFrom('jjbravo88@gmail.com', 'RUMI');
 $mail­>AddAddress('jjbravo88@gmail.com', "Jonathan Bravo");
