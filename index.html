@@ -46,7 +46,7 @@
 	<body>
 		<!-- start preloader -->
 		<div class="preloader">
-			<div class="sk-spinner sk-spinner-rotating-plane"></div>
+			<div class="loading-icon"></div>
     	 </div>
 		<!-- end preloader -->
 		<!-- start navigation -->
