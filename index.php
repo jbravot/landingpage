@@ -216,8 +216,8 @@
 							<p>Solicite una cotización, vea en acción la plataforma académica y conozca por qué debe adquirirla.</p>
 							<address>
 								<p><i class="fa fa-map-marker"></i>Alborada 5ta etapa, Guayaquil, Ecuador</p>
-								<p><i class="fa fa-whatsapp"></i> 0990660821</p>
-								<p><a href="http://twitter.com/rumi_ec" target="_blank" title="@rumi_ec"><i class="fa fa-twitter"></i> @rumi_ec</a></p>
+								<p><a href="http://www.facebook.com/RumiEcu/" target="_blank" title="@rumiEcu"><i class="fa fa-facebook"></i> /RumiEcu</a></p>
+								<p><a href="http://www.twitter.com/rumi_ec" target="_blank" title="@rumi_ec"><i class="fa fa-twitter"></i> @rumi_ec</a></p>
 								<p><a href="skype:rumi_ec?call" target="_blank" title="rumi_ec"><i class="fa fa-skype"></i> rumi_ec</a></p>
 							</address>
 						</div>
