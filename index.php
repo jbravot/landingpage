@@ -6,11 +6,11 @@
     	http://www.templatemo.com/tm-446-boxer
     	-->
 		<meta charset="utf-8">
-		<title>RUMI - Plataforma Académica</title>
+		<title>RUMI - Plataforma Académica en Línea Para Escuelas y Colegios</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="">
-		<meta name="description" content="">
+		<meta name="keywords" content="Plataforma, académico, escuela, colegio, academia, calificaciones, software academico">
+		<meta name="description" content="La forma más fácil y segura de gestionar en línea calificaciones, tareas y procesos académicos">
 		
 		<!-- favicon and touch icons -->
 		
