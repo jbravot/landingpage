@@ -10,14 +10,14 @@ $mail->SMTPAuth   = true;                  // enable SMTP authentication
 $mail->SMTPSecure = "tls";                 // sets the prefix to the servier
 $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 $mail->Port       = 587;                   // set the SMTP port for the GMAIL server
-$mail->Username   = "jjbravo88@gmail.com";  // GMAIL username
-$mail->Password   = "tarpuyJON963";            // GMAIL password
+$mail->Username   = "rumiecu@gmail.com";  // GMAIL username
+$mail->Password   = "htne37qi";            // GMAIL password
 
 //defino el email y nombre del remitente del mensaje
 ///$mail->setFrom("jjbravo88@gmail.com", "RUMI");
-$mail->From = 'jjbravo88@gmail.com';
+$mail->From = 'rumiecu@gmail.com';
 $mail->FromName = 'RUMI';
-$mail->AddAddress("jjbravo88@gmail.com", "Jonathan Bravo");
+$mail->AddAddress("rumiecu@gmail.com", "Jonathan Bravo");
 
 $elmensaje = str_replace("\n.", "\n..", $_POST["text"]);     //por si el mensaje empieza con un punto ponerle 2
 $elmensaje = wordwrap($elmensaje, 70);                       //dividir el mensaje en trozos de 70 cols

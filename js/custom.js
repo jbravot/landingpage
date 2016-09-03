@@ -43,8 +43,8 @@ $(function() {
 			url: "mail.php",
 			data: dataString,
 			success: function(){
-			  msj("Tu mensaje ha sido enviado con éxito.","alert-danger","alert-success");
-			  limpiarForm();
+                          window.location.href = "http://www.rumiec.com/cotizar.php";
+			 // limpiarForm();
 			}
 		  });
 		}
